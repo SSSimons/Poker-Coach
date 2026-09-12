@@ -3,7 +3,7 @@
 =======
 # Casino Coach Poker 0.5.4
 
-Учебный Android-тренажёр решений в Texas Hold’em на Python и Kivy. Приложение не принимает реальные ставки: фантики являются только внутренними учебными очками.
+Android-тренажёр решений в Texas Hold’em на Python и Kivy. Приложение не принимает реальные ставки: фантики являются только внутренними учебными очками.
 
 ## Первое открытие
 
@@ -65,21 +65,21 @@
 
 ## Сборка
 
-Сборка выполняется в WSL из `/home/se/projects/casino_coach`.
+Сборка выполняется в Linux
 
 Для Samsung и других ARM64-телефонов:
 
 ```bash
-source /home/se/.venvs/kivy-android/bin/activate
-cd /home/se/projects/casino_coach
+cd casino_coach
+source venv/bin/activate
 ./tools/build_phone_apk.sh
 ```
 
 Для Android Studio Virtual Device x86_64:
 
 ```bash
-source /home/se/.venvs/kivy-android/bin/activate
-cd /home/se/projects/casino_coach
+cd casino_coach
+source venv/bin/activate
 ./tools/build_emulator_apk.sh
 ```
 
@@ -94,4 +94,3 @@ python -m unittest discover -s tests -v
 Тесты покрывают покерный оценщик комбинаций, сравнение рук, базовую стратегию, позиционные диапазоны, range-equity и решения всех профилей ботов. `tools/smoke_ui.py` дополнительно проходит весь onboarding, основные режимы и цепочку BET → RAISE → CALL с проверкой сохранения суммы pot + stack.
 
 Приложение предназначено для обучения. Оно не принимает реальные ставки, не гарантирует выигрыш и не является финансовым советом.
->>>>>>> 502f5f3 (Импорт проекта)
