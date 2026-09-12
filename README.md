@@ -1,5 +1,4 @@
 
-# Poker-Coach
 
 # Casino Coach Poker 0.5.4
 
